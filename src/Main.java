@@ -5,9 +5,16 @@ public class Main {
 
     }
 
+    static String addUserGuesses(String userGuesses, String newUserGuess) {
+        if(!userGuesses.contains(newUserGuess)) {
+            userGuesses = userGuesses + newUserGuess;
+        }
 
-    static boolean userGuessesHangmanCorrectly(String userGuess, String actualWord) {
-        if (userGuess.equalsIgnoreCase(actualWord)) {
+        return userGuesses;
+    }
+
+    static boolean userGuessesHangmanCorrectly(String userGuesses, String actualWord) {
+        if (userGuesses.equalsIgnoreCase(actualWord)) {
             return true;
         } else return false;
 
