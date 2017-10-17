@@ -11,8 +11,8 @@ public class UnitTests {
 
     @Test
     public void firstTest() {
-        String expected = "Test";
-        String actual = "Test";
+        boolean expected = true;
+        boolean actual = Main.userGuessesHangmanCorrectly("g", "g");
         assertEquals(expected, actual);
     }
 

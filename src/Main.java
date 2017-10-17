@@ -4,4 +4,12 @@ public class Main {
         System.out.println("Hello World!");
 
     }
+
+
+    static boolean userGuessesHangmanCorrectly(String userGuess, String actualWord) {
+        if (userGuess.equalsIgnoreCase(actualWord)) {
+            return true;
+        } else return false;
+
+    }
 }
