@@ -30,4 +30,25 @@ public class UnitTests {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testContainsMethodValidation() {
+        boolean expected = true;
+        boolean actual = Main.characterIsInHangmanWord("a", "hangman");
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testPrintsOutHangman() {
+        boolean expected = false;
+        boolean actual = Main.printOutCurrentHangman("a", "ab");
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testPrintsOutInitialLine() {
+        int expected = 2;
+        int actual = Main.printOutStartingLine( "ab");
+        assertEquals(expected, actual);
+    }
+
 }
